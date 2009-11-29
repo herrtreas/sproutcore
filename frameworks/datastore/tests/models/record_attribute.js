@@ -3,7 +3,11 @@
 // Copyright: ©2006-2009 Apple Inc. and contributors.
 // License:   Licened under MIT license (see license.js)
 // ==========================================================================
-/*globals module ok equals same test MyApp */
+/*globals module ok equals same test MyApp plan */
+
+"import package core_test";
+"import package sproutcore/runtime";
+"import package sproutcore/datastore";
 
 // test core array-mapping methods for RecordArray with RecordAttribute
 var storeKeys, rec, rec2, bar, MyApp;
@@ -201,3 +205,6 @@ test("writing an attribute should make many relationship aggregate dirty" ,funct
   equals(rec.get('status'), SC.Record.READY_DIRTY, "foo1 should be READY_DIRTY");
   equals(rec2.get('status'), SC.Record.READY_DIRTY, "foo2 should be READY_DIRTY");
 });
+
+plan.run();
+
