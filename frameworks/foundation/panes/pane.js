@@ -5,7 +5,9 @@
 // License:   Licened under MIT license (see license.js)
 // ==========================================================================
 
-sc_require('views/view');
+"import package sproutcore/runtime";
+"import views/view";
+"export package";
 
 /** @class
   A Pane is like a regular view except that it does not need to live within a 
@@ -715,3 +717,4 @@ SC.Pane = SC.View.extend( /** @scope SC.Pane.prototype */ {
   
 }) ;
 
+require('system/root_responder');
