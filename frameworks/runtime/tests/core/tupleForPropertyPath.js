@@ -6,7 +6,7 @@
 "import package core_test";
 "import core";
 "import system/object";
-"import package tiki/system as system";
+"import package default:system as system";
 
 var object, object1,object3; //global variables
 

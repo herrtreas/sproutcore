@@ -4,7 +4,7 @@
 /*globals module test ok same equals expects */
 
 "import package core_test";
-"import package tiki/system as system";
+"import default:system as system";
 "import core";
 
 // An ObjectController will make a content object or an array of content objects 

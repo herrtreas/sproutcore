@@ -7,7 +7,7 @@
 /*global NodeList system */
 
 "require license";
-"import package tiki/system as system";
+"import default:system as system";
 "export package SC SproutCore YES NO";
 
 // ........................................
