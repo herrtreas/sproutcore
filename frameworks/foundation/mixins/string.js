@@ -338,7 +338,19 @@ SC.String = {
   trimRight: function () {
     return this.replace(/\s+$/g,"");
   }
+   
+  /**
+    Truncates string after a given length.
     
+    @param {Integer} the length after which the string should be truncated; defaults to 30
+    @param {String} an extension-text that gets appended to the string after truncation; defaults to ".."
+    @returns {String} the truncated string
+  */ 
+  truncate: function(length, extension) {
+    length = (length == undefined) ? 30 : length;
+    extension = (extension == undefined) ? '..' : extension;
+    return this.substr(0, length) + extension;
+  }  
 };
 
 /** @private */
